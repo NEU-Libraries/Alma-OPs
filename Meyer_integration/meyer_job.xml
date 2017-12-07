@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<job link="https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/jobs/S7599421650001401">
-  <id>S7599421650001401</id>
+<job link="https://api-na.hosted.exlibrisgroup.com/almaws/v1/conf/jobs/S7696884050001401">
+  <id>S7696884050001401</id>
   <name>Send Requests to Remote Storage</name>
   <description>Remote Storage - Export Requests</description>
   <type desc="Scheduled">SCHEDULED</type>
   <category desc="Fulfillment">FULFILLMENT</category>
   <schedule>NOT_SCHEDULED</schedule>
-  <creator>exl_support</creator>
+  <creator>001130779</creator>
   <parameters>
     <parameter>
       <name desc="com.exlibris.systemJob.param.EXTERNAL_SYS_TYPE">EXTERNAL_SYS_TYPE</name>
@@ -53,6 +53,7 @@
     </parameter>
     <parameter>
       <name desc="com.exlibris.systemJob.param.empty1">empty1</name>
+      <value/>
     </parameter>
     <parameter>
       <name desc="com.exlibris.systemJob.param.EXTERNAL_SYS_CODE">EXTERNAL_SYS_CODE</name>
@@ -60,6 +61,7 @@
     </parameter>
     <parameter>
       <name desc="com.exlibris.systemJob.param.empty">empty</name>
+      <value/>
     </parameter>
     <parameter>
       <name desc="com.exlibris.systemJob.param.runJobLibraryPhysicalDigitization">runJobLibraryPhysicalDigitization</name>
@@ -71,7 +73,7 @@
     </parameter>
     <parameter>
       <name desc="com.exlibris.systemJob.param.OutputFilePath">OutputFilePath</name>
-      <value>MEYERprod</value>
+      <value/>
     </parameter>
     <parameter>
       <name desc="com.exlibris.systemJob.param.scheduleWorkOrder">scheduleWorkOrder</name>
