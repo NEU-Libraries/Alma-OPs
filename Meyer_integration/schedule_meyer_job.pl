@@ -7,8 +7,7 @@ use strict;
 use XML::Simple;
 use Data::Dumper;
 
-my $working_dir = '/Users/greg.mcclellan/OneDrive - Northeastern University/Alma/GIT/Meyer_integration';
-#my $working_dir = '/mnt/libraryfeed/ALMA/MEYER';
+my $working_dir = '/mnt/libraryfeed/ALMA/MEYER';
 chdir ($working_dir);
 
 # Be sure to create a file containing your api_key called 'api_key.txt' in this directory
@@ -44,7 +43,7 @@ if ($ref->{errorsExist} eq "true") {
 	print ERROR $response_xml, "\n";
 	close ERROR;
 		
-	open MAIL, "| $mailx -s 'Meyer job error!!!!!' g.mcclellan\@northeastern.edu e.valencia\@northeastern.edu";
+	open MAIL, "| $mailx -s 'Meyer job error!!!!!' g.mcclellan\@northeastern.edu";
 	print MAIL XMLout($ref);
 	close MAIL;
 
@@ -55,6 +54,6 @@ open LOG, ">>meyer_job_log.txt" or die $!;
 print LOG $ref->{additional_info}->{content}, "\n";
 close LOG;
 
-open MAIL, "| $mailx -s 'Meyer Job Ran' g.mcclellan\@northeastern.edu e.valencia\@northeastern.edu";
+open MAIL, "| $mailx -s 'Meyer Job Ran' g.mcclellan\@northeastern.edu";
 print MAIL XMLout($ref);
 close MAIL;
