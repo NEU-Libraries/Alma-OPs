@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:NCIPMessage
+    version="http://www.niso.org/schemas/ncip/v2_0/imp1/xsd/ncip_v2_0.xsd" xmlns:ns1="http://www.niso.org/2008/ncip">
+    <ns1:CheckOutItem>
+        <ns1:InitiationHeader>
+            <ns1:FromSystemId>NCIP_REMOTE_STORAGE</ns1:FromSystemId>
+            <ns1:FromAgencyId>
+                <ns1:AgencyId Scheme="http://www.exlibris.com/ncip/schemes/agency.scm">01NEU_INST</ns1:AgencyId>
+            </ns1:FromAgencyId>
+            <ns1:ToAgencyId>
+                <ns1:AgencyId Scheme="http://www.exlibris.com/ncip/schemes/agency.scm">01NEU_INST</ns1:AgencyId>
+            </ns1:ToAgencyId>
+            <ns1:ApplicationProfileType>MEYER</ns1:ApplicationProfileType>
+            <ns1:OnBehalfOfAgency>
+                <ns1:AgencyId ns1:Scheme="http://www.exlibris.com/ncip/schemes/agency.scm">SNELL.Remote_Dsk</ns1:AgencyId>
+        	</ns1:OnBehalfOfAgency>                        
+        </ns1:InitiationHeader>
+        <ns1:UserId>
+            <ns1:AgencyId Scheme="http://www.exlibris.com/ncip/schemes/agency.scm">01NEU_INST</ns1:AgencyId>
+            <ns1:UserIdentifierValue></ns1:UserIdentifierValue>
+        </ns1:UserId>
+        <ns1:RequestId>
+            <ns1:AgencyId Scheme="http://www.exlibris.com/ncip/schemes/agency.scm">01NEU_INST</ns1:AgencyId>
+            <ns1:RequestIdentifierValue>7113438390001401</ns1:RequestIdentifierValue>
+        </ns1:RequestId>
+        <ns1:ItemId>
+            <ns1:AgencyId Scheme="http://www.exlibris.com/ncip/schemes/agency.scm">01NEU_INST</ns1:AgencyId>
+            <ns1:ItemIdentifierValue>393358015770024</ns1:ItemIdentifierValue>
+        </ns1:ItemId>
+    </ns1:CheckOutItem>
+</ns1:NCIPMessage>
